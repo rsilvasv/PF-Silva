@@ -110,7 +110,7 @@ footer {
     gap: 20px ;
     display: flex;
     padding: 20px;
-
+    margin-top: 20px;
 }
 
 .redes {
@@ -136,9 +136,28 @@ footer {
 
 /*-------------PRODUCTOS-------------*/
 
+/* ---Efecto zoom--- */
 .section-productos img {
-    height: 250px;
-    width: 250px;
+    height: 200px;  /* Ajusta la altura según tu preferencia */
+    width: auto;
+    object-fit: cover;  /* Ajusta la forma en que las imágenes se ajustan al contenedor */
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-productos img:hover {
+    transform: scale(1.1);
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
 }
 
 
