@@ -37,41 +37,51 @@
                 </li>
             </ul>
         </nav>
-
     </header>
 
-    <main>
+    <main class="container mt-4">
         <section>
-            <h2>Titulo</h2> <!--Guia como llegar-->
-            <p>asddsadsaadsasdadsLorem ipsahrelocuraum dolor sit amet consectetur adipisicing elit. Corporis distinctio optio alias unde molestiae veritatis, eligendi amet repellendus animi explicabo, deserunt assumenda vitae corrupti? Tenetur minus eaque sapiente dicta quod.</p>
-        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13140.390383848886!2d-58.4846319!3d-34.576397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb667dd73f929%3A0xebbe8395a6f58860!2sCultivo%20Urbano%20Urquiza%20Grow%20Shop!5e0!3m2!1sen!2sau!4v1706253080719!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <h2 class="mb-4">Guía para llegar</h2>
+            <p>¡Hola y bienvenido a Cultivo Urbano!</p>
+                <p> En nuestra tienda, te invitamos a sumergirte en un mundo verde y relajado. Aquí, cada día es una aventura entre plantas y sonrisas.
+                </p>
+                <p>¿Te preguntas cómo llegar hasta nosotros? ¡Es fácil! Solo sigue el aroma fresco y relajante hasta nuestro local. Si necesitas más ayuda, también puedes usar el mapa de Google abajo.
+                </p>
+                <p>¡Te esperamos con los brazos abiertos y las plantas más hermosas!</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13140.390383848886!2d-58.4846319!3d-34.576397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb667dd73f929%3A0xebbe8395a6f58860!2sCultivo%20Urbano%20Urquiza%20Grow%20Shop!5e0!3m2!1sen!2sau!4v1706253080719!5m2!1sen!2sau" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <section class="formulario"> <!-- Formulario para contacto -->
-            <h3>Contacto y Consultas</h3>
+        <section class="mt-4">
+            <h3 style="color: white;">Contacto y Consultas</h3>
             <form action="procesar-formulario.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label" style="color: white;">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: white;">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label" style="color: white;">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required style="color: white;"></textarea>
+                </div>
 
-                <input type="submit" value="Enviar Consulta">
+                <button type="submit" class="btn btn-primary">Enviar Consulta</button>
             </form>
         </section>
     </main>
 
-    <footer class="bg-dark">
+    <footer class="bg-dark">  
         <!-----Redes y copyright-->
         <a class="redes" href="https://www.instagram.com/cultivourbanogrow/" target="_blank">Instagram</a>
         <a class="redes" href="https://twitter.com/CultivoUrbano7" target="_blank">Twitter</a>
-        <p class="redes"><em>Copyright © 2024</em></p>
+        <p class="redes"><em>Copyright © 2024</em></p> 
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
