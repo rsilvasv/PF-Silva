@@ -147,9 +147,9 @@ footer {
 
 /* ---Efecto zoom--- */
 .section-productos img {
-    height: 200px;  /* Ajusta la altura según tu preferencia */
+    height: 200px;  
     width: auto;
-    object-fit: cover;  /* Ajusta la forma en que las imágenes se ajustan al contenedor */
+    object-fit: cover;  
     transition: transform 0.3s ease-in-out;
 }
 
@@ -168,6 +168,20 @@ footer {
     font-weight: 300;
     color: white;
 }
+
+.custom-shadow {
+    box-shadow: 0 0 10px rgba(135, 225, 0, 0.782);
+    background-color: black;
+}
+
+.custom-shadow p{
+    color: white;
+}
+
+.custom-shadow h5{
+    color: white;
+}
+
 
 
 /*-------------QUIENES SOMOS-------------*/
