@@ -44,36 +44,7 @@ body {
     flex-wrap: wrap;
 }
 
-.index-img {
-    height: 300px;
-    width: 1150px;
-    margin-left: 175px;
-}
 
-.prueba-uno {
-    display: flex;
-    margin: 15px, 15px, 20px, 15px;
-    border-radius: 15px;
-}
-
-.prueba-dos {
-    background-color: #C8D300;
-    padding: 20px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    border-radius: 15px;
-    margin: 5px;
-}
-
-.prueba-dos p {
-    font-size: 17px;
-}
-
-.carousel-item img {
-    width: 50px;
-    height: 600px;
-}
 
 h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -126,11 +97,47 @@ footer {
 
 
 /*-------------INDEX-------------*/
-
-.index-banner {
+.index-img {
     height: 300px;
-    width: 98%;
-    margin: 3px 5px;
+    width: 1150px;
+    margin-left: 175px;
+}
+
+
+
+.carousel-item img {
+    width: 50px;
+    height: 600px;
+}
+.prueba-uno {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.prueba-dos {
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Ajustar el ancho según tus necesidades */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 300px;
+}
+
+.prueba-dos:hover {
+    transform: scale(1.05);
+}
+
+.prueba-dos h2 {
+    color: black; 
+}
+
+.prueba-dos p {
+    color: #495057; 
 }
 
 
@@ -165,30 +172,39 @@ footer {
 
 .quienes {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.quienes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card-quienes {
     display: flex;
-    flex-direction: column;
-    width: 33%;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
+    flex-direction: column; /* Asegura que los elementos dentro de la tarjeta se apilen verticalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Agrega un borde alrededor de cada tarjeta */
+    border-radius: 10px; /* Redondea las esquinas de las tarjetas */
+    max-width: 400px; /* Limita el ancho máximo de las tarjetas para un diseño más consistente */
+    box-shadow: 0 0 10px rgb(153, 195, 1); /* Agrega una sombra sutil a las tarjetas */
 }
 
 .card-quienes img {
-    height: 400px;
-    width: 100%;
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes para que no se desborden de las tarjetas */
+    height: 400px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen para llenar el contenedor */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
 }
 
 .quienes-text {
-    justify-content: justify;
-    padding: 20px 10%;
+    margin-top: 20px;
+    text-align: center; /* Centra el texto dentro de la tarjeta */
 }
-
-
-
 
 
 
