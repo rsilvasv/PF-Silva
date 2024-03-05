@@ -82,8 +82,7 @@ footer {
     gap: 20px ;
     display: flex;
     padding: 20px;
-    margin-top: 100px;
-    margin-bottom: 0;
+    margin-top: 50px;
 }
 
 .redes {
@@ -181,7 +180,7 @@ footer {
     color: white;
     text-align: justify;
     margin: 10px 0;
-    min-height: 600px; 
+    min-height: 300px; 
 }
 
 /*-------------PRODUCTOS-------------*/
