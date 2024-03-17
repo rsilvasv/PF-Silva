@@ -1,0 +1,30 @@
+/*-------------FOOTER-------------*/
+
+footer {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    size: 10px;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+
+    // Estilos de los enlaces de redes sociales
+    .redes {
+        color: white;
+        text-decoration: none;
+        margin-top: 60px;
+
+        &:hover {
+            color: #0A58CA;
+            transition: 1.5s;
+        }
+
+        // Estilos de los iconos de redes sociales
+        img {
+            width: 24px;
+            margin-right: 5px;
+        }
+    }
+}
