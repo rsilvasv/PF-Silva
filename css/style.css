@@ -57,6 +57,59 @@ footer .redes img {
 }
 
 /* Variables header */
+.cards-individuales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgb(153, 195, 1);
+  transition: transform 0.3s ease-in-out;
+  height: 380px;
+}
+.cards-individuales:hover {
+  transform: scale(1.05);
+}
+.cards-individuales .card-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.cards-individuales p {
+  color: white;
+  text-align: justify;
+  margin: 10px 0;
+  min-height: 300px;
+}
+
+.card-quienes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgb(153, 195, 1);
+}
+.card-quienes img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card-quienes .quienes-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,37 +167,6 @@ p {
   justify-content: center;
 }
 
-.cards-individuales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgb(153, 195, 1);
-  transition: transform 0.3s ease-in-out;
-  height: 380px;
-}
-.cards-individuales:hover {
-  transform: scale(1.05);
-}
-.cards-individuales .card-title {
-  color: white;
-  text-align: center;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-.cards-individuales p {
-  color: white;
-  text-align: justify;
-  margin: 10px 0;
-  min-height: 300px;
-}
-
 /*-------------PRODUCTOS-------------*/
 .section-productos img {
   height: 200px;
@@ -169,28 +191,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.card-quienes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgb(153, 195, 1);
-}
-.card-quienes img {
-  max-width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.card-quienes .quienes-text {
-  margin-top: 20px;
-  text-align: center;
 }
 
 /*-------------ASESORAMIENTO-------------*/

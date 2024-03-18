@@ -1,6 +1,8 @@
 @import "partials/header" ;
 @import "partials/footer" ;
 @import "partials/variables" ;
+@import "partials/placeholders" ;
+
 
 
 // Reset de estilos para todos los elementos
@@ -66,7 +68,6 @@ p {
 }
 
 
-
 /*-------------Cards index-------------*/
 
 .cards-index {
@@ -74,40 +75,8 @@ p {
     justify-content: center;
 }
 
-.cards-individuales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgb(153, 195, 1);
-    transition: transform 0.3s ease-in-out;
-    height: 380px;
-
-    &:hover {
-        transform: scale(1.05);
-    }
-
-    // Estilos del título de la tarjeta
-    .card-title {
-        color: white;
-        text-align: center;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-    }
-
-    // Estilos de los párrafos dentro de las tarjetas
-    p {
-        color: white;
-        text-align: justify;
-        margin: 10px 0;
-        min-height: 300px; 
-    }
+.cards-individuales { 
+    @extend %index-card-styles
 }
 
 
@@ -144,29 +113,7 @@ p {
 
 // Estilos de las tarjetas de "Quiénes somos"
 .card-quienes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgb(153, 195, 1);
-
-    // Estilos de las imágenes dentro de las tarjetas
-    img {
-        max-width: 100%;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    // Estilos del texto dentro de las tarjetas
-    .quienes-text {
-        margin-top: 20px;
-        text-align: center;
-    }
+    @extend %quienes-card-styles
 }
 
 /*-------------ASESORAMIENTO-------------*/
