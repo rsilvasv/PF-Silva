@@ -43,4 +43,32 @@
         width: 100% !important;
         border-radius: 0 !important;
     }
+
+
+    .section-productos {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+            width: 100%;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .imagenes-adicionales {
+        display: flex;
+        margin-top: 20px; /* Espaciado desde la parte superior */
+
+        img {
+            max-width: 100%; /* Ajustar el ancho al 100% */
+            height: auto; /* Mantener la altura automática */
+            margin-bottom: 10px; /* Espaciado entre las imágenes */
+        }
+    }
 }
+    

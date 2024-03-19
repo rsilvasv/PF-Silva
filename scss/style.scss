@@ -82,16 +82,31 @@ p {
 
 /*-------------PRODUCTOS-------------*/
 
-.section-productos img {
-    height: 200px;
-    width: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-    }
+.section-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; // Espacio entre las tarjetas y las imágenes
 }
+
+.card {
+    flex-basis: calc(70% - 20px); // El 70% del ancho para las tarjetas
+    margin-bottom: 20px; // Espacio entre las tarjetas
+}
+
+.imagenes-adicionales {
+    flex-basis: calc(30% - 20px); // El 30% del ancho para las imágenes
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; // Alinea las imágenes a la derecha
+    margin-top: 20px; // Espaciado desde la parte superior
+}
+
+.imagenes-adicionales img {
+    width: 100%; // Ajusta el ancho al contenedor
+    margin-bottom: 20px; // Espaciado entre las imágenes
+}
+
+
 
 .custom-shadow {
     box-shadow: 0 0 10px rgba(135, 225, 0, 0.782);
@@ -103,7 +118,7 @@ p {
     }
 }
 
-/*-------------QUIENES SOMOS-------------*/
+/* -------------QUIENES SOMOS------------- */
 
 .quienes {
     display: flex;
@@ -116,7 +131,7 @@ p {
     @extend %quienes-card-styles
 }
 
-/*-------------ASESORAMIENTO-------------*/
+/* -------------QUIENES SOMOS------------- */
 
 .asesoramiento {
     display: flex;
@@ -145,13 +160,6 @@ p {
 .card-text {
     color: black;
 }
-
-/*-------------FORMULARIO-------------*/
-
-.formulario {
-    color: white;
-}
-
 
 
 @import "partials/mediaqueries" ;
