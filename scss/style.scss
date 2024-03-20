@@ -187,9 +187,30 @@ p {
 
 /* -----QUIENES SOMOS----- */
 
-// Estilos de las tarjetas de "Quiénes somos"
+// Estilos de las tarjetas
 .card-quienes {
-    @extend %quienes-card-styles
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgb(153, 195, 1);
 
+    // Estilos de las imágenes dentro de las tarjetas
+    img {
+        max-width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    // Estilos del texto dentro de las tarjetas
+    .quienes-text {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
 @import "partials/mediaqueries";

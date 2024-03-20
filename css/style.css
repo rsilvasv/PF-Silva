@@ -89,28 +89,6 @@ footer .redes img {
   min-height: 300px;
 }
 
-.card-quienes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgb(153, 195, 1);
-}
-.card-quienes img {
-  max-width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.card-quienes .quienes-text {
-  margin-top: 20px;
-  text-align: center;
-}
-
 /* Estilo centrado */
 * {
   margin: 0;
@@ -263,6 +241,28 @@ p {
 }
 
 /* -----QUIENES SOMOS----- */
+.card-quienes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgb(153, 195, 1);
+}
+.card-quienes img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card-quienes .quienes-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Estilo centrado */
 /*-------------Media queries-------------*/
 /* -----Mobile----- */
