@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables header */
 /* -------------HEADER-------------*/
 header {
@@ -146,6 +147,33 @@ p {
   justify-content: space-around;
 }
 
+/*-------------INDEX-------------*/
+.index-img {
+  height: 300px;
+  width: 1150px;
+  margin-left: 175px;
+}
+
+.carousel-item {
+  width: 70vw;
+  margin-left: 15vw;
+}
+.carousel-item img {
+  border-radius: 20px;
+}
+
+/*-------------Cards index-------------*/
+.cards-index {
+  display: flex;
+  justify-content: center;
+}
+
+.quienes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 /*-------------PRODUCTOS-------------*/
 .container {
   display: flex;
@@ -197,17 +225,20 @@ p {
 }
 
 /* ------ASESORAMIENTO------ */
-.asesoramiento {
+.container-asesoramiento {
+  margin: 1rem;
+}
+.container-asesoramiento .asesoramiento {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 20px;
   text-align: left;
 }
-.asesoramiento h1 {
+.container-asesoramiento .asesoramiento h1 {
   color: white;
 }
-.asesoramiento img {
+.container-asesoramiento .asesoramiento img {
   height: 80px;
   width: 80px;
   margin-right: 20px;
@@ -226,34 +257,12 @@ p {
   margin: 0.5rem;
 }
 
-/*-------------INDEX-------------*/
-.index-img {
-  height: 300px;
-  width: 1150px;
-  margin-left: 175px;
+/* ------COMO LLEGAR----- */
+.container-como-llegar {
+  margin: 2rem;
 }
 
-.carousel-item {
-  width: 70vw;
-  height: 85vh;
-  margin-left: 15vw;
-}
-.carousel-item img {
-  border-radius: 20px;
-}
-
-/*-------------Cards index-------------*/
-.cards-index {
-  display: flex;
-  justify-content: center;
-}
-
-.quienes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
+/* -----QUIENES SOMOS----- */
 /* Estilo centrado */
 /*-------------Media queries-------------*/
 /* -----Mobile----- */
@@ -272,6 +281,9 @@ p {
   }
   .cards-index {
     padding: 20px;
+  }
+  .cards-index .container-index div {
+    margin-bottom: 3rem;
   }
   /* Header - navbar */
   .nav-bar ul {
@@ -353,6 +365,25 @@ p {
   .asesoramiento .col-md-6 div {
     flex-direction: column;
     justify-items: center;
+  }
+}
+/* -----Desktop----- */
+@media (max-width: 1024px) {
+  /*     .cards-individuales {
+          width: 100%;
+          height: 29rem;
+          align-items: center;
+          p {
+              margin-top: 0;
+              text-align: justify;      
+            }
+
+      } */
+  .cards-individuales {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegúrate de que la tarjeta ocupe toda la altura disponible */
+    justify-content: initial;
   }
 }
 

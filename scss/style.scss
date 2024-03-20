@@ -42,6 +42,45 @@ p {
     justify-content: space-around;
 }
 
+/*-------------INDEX-------------*/
+
+// Estilos de la imagen de la página de inicio
+.index-img {
+    height: 300px;
+    width: 1150px;
+    margin-left: 175px;
+}
+
+// Estilos del carrusel
+.carousel-item {
+    width: 70vw;
+    margin-left: 15vw;
+
+    // Estilos de las imágenes del carrusel
+    img {
+        border-radius: 20px;
+    }
+}
+
+
+/*-------------Cards index-------------*/
+
+.cards-index {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-individuales { 
+    @extend %index-card-styles
+}
+
+.quienes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
 /*-------------PRODUCTOS-------------*/
 
 .container {
@@ -103,26 +142,28 @@ p {
 
 /* ------ASESORAMIENTO------ */
 
-.asesoramiento {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    text-align: left;
+.container-asesoramiento{
+    margin: 1rem;
+    .asesoramiento {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        text-align: left;
 
 
-    h1 {
-        color: white;
-    }
+        h1 {
+            color: white;
+        }
 
-    
-    img {
-        height: 80px;
-        width: 80px;
-        margin-right: 20px;
+        
+        img {
+            height: 80px;
+            width: 80px;
+            margin-right: 20px;
+        }
     }
 }
-
 .acordion-asesoramiento {
     color: black;
 }
@@ -136,44 +177,15 @@ p {
     margin:0.5rem
 }
 
-/*-------------INDEX-------------*/
 
-// Estilos de la imagen de la página de inicio
-.index-img {
-    height: 300px;
-    width: 1150px;
-    margin-left: 175px;
-}
+/* ------COMO LLEGAR----- */
 
-// Estilos del carrusel
-.carousel-item {
-    width: 70vw;
-    height: 85vh;
-    margin-left: 15vw;
-
-    // Estilos de las imágenes del carrusel
-    img {
-        border-radius: 20px;
-    }
+.container-como-llegar {
+    margin: 2rem
 }
 
 
-/*-------------Cards index-------------*/
-
-.cards-index {
-    display: flex;
-    justify-content: center;
-}
-
-.cards-individuales { 
-    @extend %index-card-styles
-}
-
-.quienes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+/* -----QUIENES SOMOS----- */
 
 // Estilos de las tarjetas de "Quiénes somos"
 .card-quienes {
