@@ -2,10 +2,8 @@
 
 /* -----Mobile----- */
 @media (max-width: 440px) {
-    .container{
-        height: 100%;
-    }
 
+    /* Section Index */
     .carousel-item {
         width: 100%;
         height: auto;
@@ -23,9 +21,15 @@
         padding: 20px;
     }
 
-    .nav-bar ul li {
-        font-size: 50%;
+    /* Header - navbar */
 
+    .nav-bar ul{
+        display: flex;
+        justify-content: center;
+        .nav-link {
+            font-size:1rem ;
+            text-align: center;
+        }  
     }
 
     header {
@@ -44,31 +48,70 @@
         border-radius: 0 !important;
     }
 
-
-    .section-productos {
-        display: flex;
-        flex-direction: column;
-
-        .card {
-            width: 100%;
-            margin-bottom: 20px;
-
-            img {
+    /* Section Productos */
+    .container{
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        .section-productos{
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            .card-productos {
+                flex-direction: column;
                 width: 100%;
-                height: auto;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0;
+                .card {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    padding: 0;
+
+                    img {
+                        width: 45%;
+                        height: auto;
+                    }
+                    .col-md-4 {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+                }
+                .imagenes-adicionales {
+                    display: none;
+                }
+
             }
         }
     }
 
-    .imagenes-adicionales {
+    .asesoramiento {
         display: flex;
-        margin-top: 20px; /* Espaciado desde la parte superior */
-
-        img {
-            max-width: 100%; /* Ajustar el ancho al 100% */
-            height: auto; /* Mantener la altura automática */
-            margin-bottom: 10px; /* Espaciado entre las imágenes */
+        align-items: center !important;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        .icono-referencia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8.5rem;
+            padding: 1rem;
+        }
+        .col-md-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center !important;
+            div {
+            flex-direction: column;
+            justify-items: center;
+            
+            }
         }
     }
 }
+
+
     
