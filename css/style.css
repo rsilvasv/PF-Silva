@@ -110,6 +110,7 @@ footer .redes img {
   text-align: center;
 }
 
+/* Estilo centrado */
 * {
   margin: 0;
   padding: 0;
@@ -220,6 +221,11 @@ p {
   color: black;
 }
 
+.row {
+  width: 95%;
+  margin: 0.5rem;
+}
+
 /*-------------INDEX-------------*/
 .index-img {
   height: 300px;
@@ -248,6 +254,7 @@ p {
   justify-content: space-around;
 }
 
+/* Estilo centrado */
 /*-------------Media queries-------------*/
 /* -----Mobile----- */
 @media (max-width: 440px) {
@@ -276,10 +283,10 @@ p {
     text-align: center;
   }
   header {
-    justify-content: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   header img {
     margin-left: 4.5rem;
@@ -335,7 +342,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 8.5rem;
+    margin-left: 8rem;
     padding: 1rem;
   }
   .asesoramiento .col-md-6 {

@@ -2,8 +2,7 @@
 @import "partials/footer" ;
 @import "partials/variables" ;
 @import "partials/placeholders" ;
-
-
+@import "partials/mixin";
 
 // Reset de estilos para todos los elementos
 * {
@@ -80,9 +79,7 @@ p {
             }
 
             .imagenes-adicionales {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include centrar;
                 width: 50%;
 
                 img {
@@ -134,6 +131,10 @@ p {
     color: black;
 }
 
+.row {
+    width: 95%;
+    margin:0.5rem
+}
 
 /*-------------INDEX-------------*/
 
